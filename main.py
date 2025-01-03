@@ -93,51 +93,110 @@
 #     print(number_sum)
 #     sleep(3)
 
-people = [
+
+
+# people = [
+#     {
+#         "name": "john",
+#         "age": 36,
+#         "sex": "m",
+#         "cars": [
+#             {
+#                 "model": "toyota",
+#                 "year": 2024,
+#                 "color": "green",
+#              },
+#              {
+#                 "model": "honda",
+#                 "year": 2023,
+#                 "color": "blue",
+#              }
+#         ]
+#     },
+#     {
+#         "name": "alex",
+#         "age": 30,
+#         "sex": "f",
+#         "cars": [
+#             {
+#                 "model": "ford",
+#                 "year": 2022,
+#                 "color": "black",
+#              },
+#              {
+#                 "model": "mazda",
+#                 "year": 2021,
+#                 "color": "white",
+#              }
+#         ]
+#     }
+# ]
+
+# car = people[1]["cars"][1]["model"]
+# print(car) #mazda
+
+
+# name = input("name:\n")
+# car = input("car:\n")
+
+# for person_key in range(0, len(people)): #person_key - is index of people
+#     if people[person_key]["age"] > 30:
+#         continue
+
+#     if name == people[person_key]["name"]:
+#         print(people[person_key])
+#         break
+
+#     for car_key in range(0, len(people[person_key]["cars"])): #car_key is index of "cars"
+#         if car == people[person_key]["cars"][car_key]["model"]:
+#             print(people[person_key]["cars"][car_key])
+#             break
+
+
+# home work
+employees = [
     {
-        "name": "John",
-        "age": 36,
-        "sex": "M",
-        "cars": [
-            {
-                "model": "Toyota",
-                "year": 2024,
-                "color": "green",
-             },
-             {
-                "model": "Honda",
-                "year": 2023,
-                "color": "blue",
-             }
-        ]
+        "name": "alex",
+        "salary": 300,
+        "occupation": {
+            "plumber": {
+                "tools": {
+                    [
+                        "wrench",
+                        "pipe_cutter",
+                    ]
+                }
+            }
+        }
     },
     {
-        "name": "Alex",
-        "age": 30,
-        "sex": "F",
-        "cars": [
-            {
-                "model": "Ford",
-                "year": 2024,
-                "color": "black",
-             },
-             {
-                "model": "Mazda",
-                "year": 2021,
-                "color": "white",
-             }
-        ]
+        "name": "john",
+        "salary": 200,
+        "occupation": {
+            "electrician": {
+                "tools": {
+                    [
+                        "screwdriver",
+                        "drill",
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "name": "mike",
+        "salary": 100,
+        "occupation": {
+            "carpenter": {
+                "tools": {
+                    [
+                        "hammer",
+                        "nail_gun",
+                    ]
+                }
+            }
+        }
     }
 ]
 
-name = input("name:\n")
-car = input("car:\n")
-
-for person_key in range(0, len(people)):
-    if name == people[person_key]["name"]:
-        print(people[person_key])
-        break
-    for car_key in range(0, len(people[person_key]["cars"])):
-        if car == people[person_key]["cars"][car_key]["model"]:
-            print(people[person_key]["cars"][car_key])
-            break
+# use list and dict
